@@ -6,7 +6,7 @@ const path = require('node:path');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const token = process.env['token']
-
+const keepAlive = require("./server.js");
 const {clientId,guildId,OwnerId} = require('./config.json');
 const image = require('./commands/aichat');
 const {GenerateImage} = require("./src/ai")
@@ -75,5 +75,5 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-
+keepAlive()
 client.login(token);
