@@ -16,6 +16,8 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "@discordjs/rest": "^1.7.0",
+    "discord-api-types": "^0.37.38",
     "openai": "^3.2.1"
   }
 }
