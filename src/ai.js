@@ -41,7 +41,7 @@ async function GenerateImage(data) {
 
 	timestamp: d.toISOString(),
 	footer: {
-		text: `Bot Developer: Ak!`,
+		text: `Ak`,
 		icon_url: 'https://www.movinfrens.com/images/team/ak.gif',
 	},
 };
